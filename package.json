@@ -1,0 +1,28 @@
+{
+  "name": "k8s",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "nest start --watch",
+    "prebuild": "rimraf dist",
+    "build": "nest build && tsc-alias --project tsconfig.json",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.2.6",
+    "@nestjs/core": "^10.2.6"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.1.18",
+    "@types/node": "^20.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.1",
+    "tsc-alias": "^1.8.8"
+  },
+  "license": "UNLICENSED"
+}
